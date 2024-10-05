@@ -7,6 +7,8 @@
     const pino = await import('pino');
     const { green, red, yellow } = chalk.default; // Destructure the colors
     const {
+    input': process.stdin,
+      'output': process.stdout
       delay,
       useMultiFileAuthState,
       BufferJSON,
